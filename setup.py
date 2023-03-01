@@ -1,9 +1,5 @@
 from setuptools import setup, find_packages
 
-try:
-    import torch
-except ImportError:
-    raise EnvironmentError('Torch must be installed before install moftransformer')
 
 with open("requirements.txt", "r") as f:
     install_requires = f.readlines()
