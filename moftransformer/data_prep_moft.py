@@ -8,7 +8,7 @@ import glob
 
 def query_mp(mp_id):
     print(os.getcwd())
-    os.mkdir("new")
+    os.makedirs("new",exist_ok=True)
     
     with MPRester("4XZe4xvgqT4R4o4i0ZnTmct4xDklMq9d") as mpr:
       docs = mpr.summary.search(material_ids=[mp_id])
